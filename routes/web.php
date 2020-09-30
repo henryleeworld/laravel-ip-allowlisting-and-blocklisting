@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,6 @@ Route::group(['middleware' => 'fw-block-blacklisted'], function ()
 
     Route::group(['middleware' => 'fw-only-whitelisted'], function () 
     {
-        Route::get('/', 'HomeController@index');
+        Route::get('/', [HomeController::class, 'index']);
     });
 });
