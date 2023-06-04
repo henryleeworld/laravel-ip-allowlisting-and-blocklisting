@@ -1,4 +1,4 @@
-# Laravel 8 許可和拒絕對 IP 位址的存取
+# Laravel 9 許可和拒絕對 IP 位址的存取
 
 引入 pragmarx 的 firewall 套件來擴增根據發出請求的 IP 地址控制對內容的存取，透過請求的內容或 HTTP 403 狀態碼（禁止）回應請求。
 
@@ -25,8 +25,8 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/T5YuyoG.png)
+![](https://i.imgur.com/X8ZSIqa.png)
 > 當新增所在 IP 地址加到拒絕清單中後，請求被封鎖時得到 HTTP 403 狀態碼（禁止）回應請求
 
-![](https://i.imgur.com/dpQQlyU.png)
+![](https://i.imgur.com/OZV8GZ6.png)
 > 當新增所在 IP 地址加到許可清單中後，可以瀏覽請求的內容

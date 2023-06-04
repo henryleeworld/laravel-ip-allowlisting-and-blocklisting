@@ -13,15 +13,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::group(['middleware' => 'fw-block-blacklisted'], function () 
+Route::group(['middleware' => 'fw-block-blocklisted'], function () 
 {
     Route::get('coming-soon', function()
     {
         return view('coming-soon');
     });
 
-    Route::group(['middleware' => 'fw-only-whitelisted'], function () 
+    Route::group(['middleware' => 'fw-only-allowlisted'], function () 
     {
         Route::get('/', [HomeController::class, 'index']);
     });
