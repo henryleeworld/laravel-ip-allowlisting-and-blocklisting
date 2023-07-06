@@ -1,4 +1,4 @@
-# Laravel 9 許可和拒絕對 IP 位址的存取
+# Laravel 10 許可和拒絕對 IP 位址的存取
 
 引入 pragmarx 的 firewall 套件來擴增根據發出請求的 IP 地址控制對內容的存取，透過請求的內容或 HTTP 403 狀態碼（禁止）回應請求。
 
